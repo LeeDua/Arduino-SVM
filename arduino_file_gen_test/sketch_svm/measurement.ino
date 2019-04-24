@@ -2,7 +2,7 @@
 
  // In this section you should implement the handling of your sensor data, which you would like to classify.
  // and an example would be:
-int sensors[9] = {539,588,542,545,748,566,568,546,557};
+int sensors[9] = {517,544,543,546,733,576,552,526,552}; 
 
 // int sensor1, sensor2, sensor3, sensor4, sensor5;
 
@@ -19,7 +19,6 @@ void loop(){
   //sensor5 = analogRead(4);
   //delay(600);
   // sensors= {sensor1, sensor2, sensor3, sensor4, sensor5};
-  
+
   svm_predict(sensors);
-  delay(100);
 }

@@ -38,12 +38,12 @@ void setup() {
 
   controlP5 = new ControlP5(this);
 
-  modelFileName = controlP5.addTextfield("Model Path", 10, 10, 200, 20);
-  modelFileName.setText("");
-  scalingFileName = controlP5.addTextfield("Scaling Path", 10, 50, 200, 20);
-  scalingFileName.setText("");
-  outputFileName = controlP5.addTextfield("Output Folder Path", 10, 150, 200, 20);
-  outputFileName.setText("");
+  modelFileName = controlP5.addTextfield("Path To Model", 10, 10, 200, 20);
+  modelFileName.setText("F:\\git_repos\\Arduino-SVM\\Model_Examples\\data.scale.model.rbf");
+  scalingFileName = controlP5.addTextfield("Path To Scale File (range)", 10, 50, 200, 20);
+  scalingFileName.setText("F:\\git_repos\\Arduino-SVM\\Model_Examples\\range");
+  outputFileName = controlP5.addTextfield("Path To Output Folder", 10, 150, 200, 20);
+  outputFileName.setText("F:\\git_repos\\Arduino-SVM\\arduino_file_gen_test");
 
   text = controlP5.addTextlabel("Text", "Please insert Files", 10, 100);
 
@@ -369,4 +369,3 @@ void controlEvent(ControlEvent theEvent) {
     exit();
   }
 }  
-

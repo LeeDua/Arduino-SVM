@@ -90,8 +90,10 @@ inline void svm_predict(int sensor[]){
   }
 
 
-  Serial.println(recognizedClass, DEC);
-  delay(500);
+  //Serial.println(recognizedClass, DEC);
+  Serial.println("CurrentClass : ");
+  Serial.println(recognizedClass);  
+  //delay(500);
   for(int q = 0; q < NR_CLASS; q++){
     result[q]=0;
   }
